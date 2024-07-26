@@ -1,4 +1,5 @@
 #include "../include/font.hpp"
+#include "../include/logger.hpp"
 
 
 std::map<og::FontId, sf::Font> og::FontPool::fontMap{};
@@ -7,7 +8,11 @@ std::map<og::FontId, sf::Font> og::FontPool::fontMap{};
 void og::FontPool::init() {
     for (auto& pair : og::fontPath) {
         og::FontPool::fontMap.insert({pair.first, sf::Font()});
-        og::FontPool::fontMap[pair.first].loadFromFile(pair.second);
+        if (og::FontPool::fontMap[pair.first].loadFromFile(pair.second) == false) {
+            std::string errorMsg = "Font load fail: ";
+            errorMsg += pair.second;
+            og::Log::error(errorMsg);
+        } 
     }   
 }
 

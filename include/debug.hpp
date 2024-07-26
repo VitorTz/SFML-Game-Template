@@ -11,6 +11,7 @@ namespace og {
             sf::Text text{};
             sf::Vector2f pos{20.f, 20.f};
             std::stringstream strStream{};
+            sf::RectangleShape background;
             float yOffset = 20.0f;
             
         

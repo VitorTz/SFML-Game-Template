@@ -209,10 +209,24 @@ CMakeFiles/Ougi.dir/src/scene_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ougi.dir/src/scene_manager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/HD/Programs/vitor/Ougi/src/scene_manager.cpp -o CMakeFiles/Ougi.dir/src/scene_manager.cpp.s
 
+CMakeFiles/Ougi.dir/src/scene_test.cpp.o: CMakeFiles/Ougi.dir/flags.make
+CMakeFiles/Ougi.dir/src/scene_test.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/scene_test.cpp
+CMakeFiles/Ougi.dir/src/scene_test.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ougi.dir/src/scene_test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/scene_test.cpp.o -MF CMakeFiles/Ougi.dir/src/scene_test.cpp.o.d -o CMakeFiles/Ougi.dir/src/scene_test.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/scene_test.cpp
+
+CMakeFiles/Ougi.dir/src/scene_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Ougi.dir/src/scene_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/HD/Programs/vitor/Ougi/src/scene_test.cpp > CMakeFiles/Ougi.dir/src/scene_test.cpp.i
+
+CMakeFiles/Ougi.dir/src/scene_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Ougi.dir/src/scene_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/HD/Programs/vitor/Ougi/src/scene_test.cpp -o CMakeFiles/Ougi.dir/src/scene_test.cpp.s
+
 CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o: CMakeFiles/Ougi.dir/flags.make
 CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/scene_title_screen.cpp
 CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o -MF CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o.d -o CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/scene_title_screen.cpp
 
 CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.s: cmake_force
 CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o: CMakeFiles/Ougi.dir/flags.make
 CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/system_obstacle.cpp
 CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o -MF CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o.d -o CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/system_obstacle.cpp
 
 CMakeFiles/Ougi.dir/src/system_obstacle.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/Ougi.dir/src/system_obstacle.cpp.s: cmake_force
 CMakeFiles/Ougi.dir/src/system_sprite.cpp.o: CMakeFiles/Ougi.dir/flags.make
 CMakeFiles/Ougi.dir/src/system_sprite.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/system_sprite.cpp
 CMakeFiles/Ougi.dir/src/system_sprite.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Ougi.dir/src/system_sprite.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Ougi.dir/src/system_sprite.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/system_sprite.cpp.o -MF CMakeFiles/Ougi.dir/src/system_sprite.cpp.o.d -o CMakeFiles/Ougi.dir/src/system_sprite.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/system_sprite.cpp
 
 CMakeFiles/Ougi.dir/src/system_sprite.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/Ougi.dir/src/system_sprite.cpp.s: cmake_force
 CMakeFiles/Ougi.dir/src/texture_pool.cpp.o: CMakeFiles/Ougi.dir/flags.make
 CMakeFiles/Ougi.dir/src/texture_pool.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/texture_pool.cpp
 CMakeFiles/Ougi.dir/src/texture_pool.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Ougi.dir/src/texture_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Ougi.dir/src/texture_pool.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/texture_pool.cpp.o -MF CMakeFiles/Ougi.dir/src/texture_pool.cpp.o.d -o CMakeFiles/Ougi.dir/src/texture_pool.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/texture_pool.cpp
 
 CMakeFiles/Ougi.dir/src/texture_pool.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/Ougi.dir/src/texture_pool.cpp.s: cmake_force
 CMakeFiles/Ougi.dir/src/util.cpp.o: CMakeFiles/Ougi.dir/flags.make
 CMakeFiles/Ougi.dir/src/util.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/util.cpp
 CMakeFiles/Ougi.dir/src/util.cpp.o: CMakeFiles/Ougi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Ougi.dir/src/util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Ougi.dir/src/util.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Ougi.dir/src/util.cpp.o -MF CMakeFiles/Ougi.dir/src/util.cpp.o.d -o CMakeFiles/Ougi.dir/src/util.cpp.o -c /mnt/HD/Programs/vitor/Ougi/src/util.cpp
 
 CMakeFiles/Ougi.dir/src/util.cpp.i: cmake_force
@@ -291,6 +305,7 @@ Ougi_OBJECTS = \
 "CMakeFiles/Ougi.dir/src/scene_level.cpp.o" \
 "CMakeFiles/Ougi.dir/src/scene_loading_screen.cpp.o" \
 "CMakeFiles/Ougi.dir/src/scene_manager.cpp.o" \
+"CMakeFiles/Ougi.dir/src/scene_test.cpp.o" \
 "CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o" \
 "CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o" \
 "CMakeFiles/Ougi.dir/src/system_sprite.cpp.o" \
@@ -310,6 +325,7 @@ bin/Ougi: CMakeFiles/Ougi.dir/src/main.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/scene_level.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/scene_loading_screen.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/scene_manager.cpp.o
+bin/Ougi: CMakeFiles/Ougi.dir/src/scene_test.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o
 bin/Ougi: CMakeFiles/Ougi.dir/src/system_sprite.cpp.o
@@ -326,7 +342,7 @@ bin/Ougi: /usr/lib/x86_64-linux-gnu/libGL.so
 bin/Ougi: /usr/lib/x86_64-linux-gnu/libudev.so
 bin/Ougi: /usr/lib/x86_64-linux-gnu/libfreetype.so
 bin/Ougi: CMakeFiles/Ougi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable bin/Ougi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/HD/Programs/vitor/Ougi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable bin/Ougi"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ougi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

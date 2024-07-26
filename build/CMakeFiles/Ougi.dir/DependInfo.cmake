@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/HD/Programs/vitor/Ougi/src/scene_level.cpp" "CMakeFiles/Ougi.dir/src/scene_level.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/scene_level.cpp.o.d"
   "/mnt/HD/Programs/vitor/Ougi/src/scene_loading_screen.cpp" "CMakeFiles/Ougi.dir/src/scene_loading_screen.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/scene_loading_screen.cpp.o.d"
   "/mnt/HD/Programs/vitor/Ougi/src/scene_manager.cpp" "CMakeFiles/Ougi.dir/src/scene_manager.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/scene_manager.cpp.o.d"
+  "/mnt/HD/Programs/vitor/Ougi/src/scene_test.cpp" "CMakeFiles/Ougi.dir/src/scene_test.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/scene_test.cpp.o.d"
   "/mnt/HD/Programs/vitor/Ougi/src/scene_title_screen.cpp" "CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o.d"
   "/mnt/HD/Programs/vitor/Ougi/src/system_obstacle.cpp" "CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o.d"
   "/mnt/HD/Programs/vitor/Ougi/src/system_sprite.cpp" "CMakeFiles/Ougi.dir/src/system_sprite.cpp.o" "gcc" "CMakeFiles/Ougi.dir/src/system_sprite.cpp.o.d"

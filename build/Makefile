@@ -500,6 +500,30 @@ src/scene_manager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ougi.dir/build.make CMakeFiles/Ougi.dir/src/scene_manager.cpp.s
 .PHONY : src/scene_manager.cpp.s
 
+src/scene_test.o: src/scene_test.cpp.o
+.PHONY : src/scene_test.o
+
+# target to build an object file
+src/scene_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ougi.dir/build.make CMakeFiles/Ougi.dir/src/scene_test.cpp.o
+.PHONY : src/scene_test.cpp.o
+
+src/scene_test.i: src/scene_test.cpp.i
+.PHONY : src/scene_test.i
+
+# target to preprocess a source file
+src/scene_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ougi.dir/build.make CMakeFiles/Ougi.dir/src/scene_test.cpp.i
+.PHONY : src/scene_test.cpp.i
+
+src/scene_test.s: src/scene_test.cpp.s
+.PHONY : src/scene_test.s
+
+# target to generate assembly for a file
+src/scene_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Ougi.dir/build.make CMakeFiles/Ougi.dir/src/scene_test.cpp.s
+.PHONY : src/scene_test.cpp.s
+
 src/scene_title_screen.o: src/scene_title_screen.cpp.o
 .PHONY : src/scene_title_screen.o
 
@@ -670,6 +694,9 @@ help:
 	@echo "... src/scene_manager.o"
 	@echo "... src/scene_manager.i"
 	@echo "... src/scene_manager.s"
+	@echo "... src/scene_test.o"
+	@echo "... src/scene_test.i"
+	@echo "... src/scene_test.s"
 	@echo "... src/scene_title_screen.o"
 	@echo "... src/scene_title_screen.i"
 	@echo "... src/scene_title_screen.s"

@@ -12,7 +12,7 @@ namespace og {
     typedef struct transform {
         sf::Vector2f pos{};
         sf::Vector2f size{};
-        og::zindex_t zindex{};
+        og::zindex_t zindex{};        
     } transform_t;
 
     typedef struct sprite_ {
@@ -29,7 +29,13 @@ namespace og {
 
     typedef struct obstacle {
         sf::FloatRect rect{};
-        sf::Vector2f collideScale{1.0f, 1.0f};
+        obstacle() = default;
+        obstacle(
+            const float width, 
+            const float height
+        ) : rect({0.0f, 0.0f, width, height}) {
+            
+        }     
     } obstacle_t;
 
     

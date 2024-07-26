@@ -14,6 +14,8 @@ namespace og {
 
         private:
             std::unordered_map<og::component_id_t, std::unique_ptr<og::IComponentArray>> componentMap{};
+            og::ComponentArray<og::obstacle_t>* obstacleArray{};
+            og::ComponentArray<og::transform_t>* transformArray{};
         
         private:
             template<typename T>
@@ -30,8 +32,18 @@ namespace og {
                 if (this->componentMap.size() != og::NUM_COMPONENTS) {
                     og::Log::error("ComponentArrayMap size != NUM_COMPONENTS");
                 }
+                this->transformArray = dynamic_cast<og::ComponentArray<og::transform_t>*>(this->componentMap[og::getComponentId<og::transform_t>()].get());
+                this->obstacleArray = dynamic_cast<og::ComponentArray<og::obstacle_t>*>(this->componentMap[og::getComponentId<og::obstacle_t>()].get());
             }
 
+            og::transform_t& getTransform(const og::entity_t e) {
+                return this->transformArray->at(e);
+            }
+
+            og::ComponentArray<og::obstacle_t>* getObstacleArray() {
+                return this->obstacleArray;
+            }
+            
             template<typename T>
             void insert(const og::entity_t e, T c) {
                 const og::component_id_t id = og::getComponentId<T>();

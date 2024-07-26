@@ -1,5 +1,6 @@
 #include "../include/texture_pool.hpp"
 #include "../include/util.hpp"
+#include "../include/logger.hpp"
 
 
 std::map<unsigned long, sf::Texture> og::TexturePool::textureMap{};
@@ -11,7 +12,11 @@ sf::Texture* og::TexturePool::load(const char* fileName) {
         const auto& pair = og::TexturePool::textureMap.insert(
             {h, sf::Texture()}
         );
-        pair.first->second.loadFromFile(fileName);
+        if (pair.first->second.loadFromFile(fileName) == false) {
+            std::string errorMsg = "Texure load fail: ";
+            errorMsg += fileName;
+            og::Log::error(errorMsg);
+        }
     }
     return &og::TexturePool::textureMap[h];
 }

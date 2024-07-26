@@ -12,6 +12,7 @@ namespace og {
 
         public:
             virtual ~IComponentArray() = default;
+            virtual og::entity_t getEntityAtIndex(const std::size_t i) = 0;
             virtual void erase(og::entity_t e) = 0;
             virtual void clear() = 0;
             virtual std::size_t size() const = 0;
@@ -38,6 +39,15 @@ namespace og {
                 this->entityToIndex[e] = this->mSize;
                 this->indexToEntity[this->mSize] = e;
                 this->arr[this->mSize++] = c;
+            }
+
+            const std::array<T, og::MAX_ENTITIES>& getArray() {
+                return this->arr;
+            }
+
+            og::entity_t getEntityAtIndex(const std::size_t i) {
+                assert(this->indexToEntity.find(i) != this->indexToEntity.end());
+                return this->indexToEntity[i];
             }
 
             void erase(const og::entity_t e) override {

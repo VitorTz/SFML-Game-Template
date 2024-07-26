@@ -1,14 +1,12 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <unordered_map>
 #include <memory>
+#include "types.hpp"
+#include "scene_id.hpp"
 
 
-namespace og {
-
-    enum SceneId {
-        TitleScreenSceneId,
-        LevelSceneId
-    };
+namespace og {    
 
 
     class Scene {
@@ -18,7 +16,7 @@ namespace og {
             virtual void update(float dt) = 0;
             virtual void draw(sf::RenderWindow& window) = 0;
 
-    };
+    };    
     
 
     class LoadingScreen : public og::Scene {
@@ -59,6 +57,7 @@ namespace og {
             static bool isChangingScene;
         
         private:
+            static void loadNextScene();
             static void changeScene();
 
         public:
@@ -66,6 +65,32 @@ namespace og {
             static void requestSceneChange(og::SceneId sceneId);
             static void update(float dt);
             static void draw(sf::RenderWindow& window);
+
+    };
+
+
+    class TestScene1 : public og::Scene {
+
+        private:
+            std::unordered_map<og::entity_t, float> entitySpeed{};
+
+        public:
+            TestScene1();
+            void update(float dt) override;
+            void draw(sf::RenderWindow& window) override;
+
+    };
+
+    class TestScene2 : public og::Scene {
+
+        private:            
+            og::entity_t playerEntity;
+            og::entity_t enemyEntity;
+
+        public:
+            TestScene2();
+            void update(float dt) override;
+            void draw(sf::RenderWindow& window) override;
 
     };
 

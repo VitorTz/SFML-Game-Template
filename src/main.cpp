@@ -6,10 +6,12 @@
 #include "../include/logger.hpp"
 #include "../include/font.hpp"
 #include "../include/ecs.hpp"
+#include "../include/camera.hpp"
 #include "../include/debug.hpp"
 
 
 int main(int argc, char const *argv[]) {
+    // window init
     sf::RenderWindow window(
         sf::VideoMode(og::SCREEN_WIDTH, og::SCREEN_HEIGHT),
         og::WINDOW_TITLE,
@@ -17,36 +19,46 @@ int main(int argc, char const *argv[]) {
     );
     
     window.setFramerateLimit(og::FPS);
+    
+    og::Log::init();
+    
+    // icon
     sf::Image iconImage;
-    iconImage.loadFromFile(ICON_IMAGE);
+    if (!iconImage.loadFromFile(ICON_IMAGE)) {
+        og::Log::error("ICON IMAGE NOT FOND");
+        return EXIT_FAILURE;
+    }
     window.setIcon(iconImage.getSize().x, iconImage.getSize().y, iconImage.getPixelsPtr());
 
     sf::Clock clock{};
 
-    og::Log::init();
     
     if (og::TYPE_ID_MAP.size() != og::NUM_COMPONENTS) {
         og::Log::error("TYPE ID MAP SIZE != NUM_COMPONENTS");
+        return EXIT_FAILURE;
     }
 
     og::FontPool::init();
     og::gEcs.init();
     og::gDebug.init();
-    og::SceneManager::init();
+    og::SceneManager::init();    
 
     while (window.isOpen()) {
+        const float dt = clock.restart().asSeconds();
+        sf::Event e{};
 
         if (!og::globals::gameIsRunning) {
             window.close();
             break;
         }
-        const float dt = clock.restart().asSeconds();    
-        
-        sf::Event e{};
+
         while (window.pollEvent(e)) {
             switch (e.type) {
                 case sf::Event::Closed:
                     window.close();
+                    break;
+                case sf::Event::MouseWheelMoved: 
+                    og::Camera::zoomIn(e.mouseWheel.delta * og::CAMERA_ZOOM_SPEED * dt);                    
                     break;
                 default:
                     break;
@@ -62,5 +74,5 @@ int main(int argc, char const *argv[]) {
 
     og::exitGame();
 
-    return 0;
+    return EXIT_SUCCESS;
 }

@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Ougi.dir/src/scene_loading_screen.cpp.o.d"
   "CMakeFiles/Ougi.dir/src/scene_manager.cpp.o"
   "CMakeFiles/Ougi.dir/src/scene_manager.cpp.o.d"
+  "CMakeFiles/Ougi.dir/src/scene_test.cpp.o"
+  "CMakeFiles/Ougi.dir/src/scene_test.cpp.o.d"
   "CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o"
   "CMakeFiles/Ougi.dir/src/scene_title_screen.cpp.o.d"
   "CMakeFiles/Ougi.dir/src/system_obstacle.cpp.o"

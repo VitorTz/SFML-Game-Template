@@ -62,6 +62,11 @@ namespace og {
             }
 
             template<typename T>
+            const std::unordered_set<og::entity_t>& getSystemEntities() {
+                return this->systemMap[og::getComponentId<T>()]->entities;
+            }
+
+            template<typename T>
             bool systemContains(const og::entity_t e) {                
                 const auto& s = this->systemMap[og::getComponentId<T>()];
                 return s->entities.find(e) != s->entities.end();                
