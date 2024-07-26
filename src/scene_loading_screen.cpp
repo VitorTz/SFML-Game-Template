@@ -15,3 +15,8 @@ void og::LoadingScreen::draw(sf::RenderWindow& window) {
     window.clear(og::globals::windowBackgroundColor);
     window.display();
 }
+
+
+void og::LoadingScreen::unload() {
+    
+}

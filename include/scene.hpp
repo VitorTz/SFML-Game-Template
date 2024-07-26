@@ -15,6 +15,7 @@ namespace og {
             virtual ~Scene() = default;
             virtual void update(float dt) = 0;
             virtual void draw(sf::RenderWindow& window) = 0;
+            virtual void unload() = 0;
 
     };    
     
@@ -25,6 +26,7 @@ namespace og {
             LoadingScreen();
             void update(float dt) override;
             void draw(sf::RenderWindow& window) override;
+            void unload() override;
 
     };
 
@@ -34,6 +36,7 @@ namespace og {
             TitleScreenScene();
             void update(float dt) override;
             void draw(sf::RenderWindow& window) override;
+            void unload() override;
 
     };
 
@@ -44,6 +47,7 @@ namespace og {
             LevelScene();
             void update(float dt) override;
             void draw(sf::RenderWindow& window) override;
+            void unload() override;
 
     };
 
@@ -78,6 +82,7 @@ namespace og {
             TestScene1();
             void update(float dt) override;
             void draw(sf::RenderWindow& window) override;
+            void unload() override;
 
     };
 
@@ -91,6 +96,7 @@ namespace og {
             TestScene2();
             void update(float dt) override;
             void draw(sf::RenderWindow& window) override;
+            void unload() override;
 
     };
 

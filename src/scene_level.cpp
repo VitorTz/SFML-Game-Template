@@ -19,3 +19,8 @@ void og::LevelScene::draw(sf::RenderWindow& window) {
         og::gEcs.draw(window);
     og::Camera::endDrawing(window);
 }
+
+
+void og::LevelScene::unload() {
+    
+}

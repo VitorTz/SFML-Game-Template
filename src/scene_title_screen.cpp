@@ -15,3 +15,8 @@ void og::TitleScreenScene::update(const float dt) {
 void og::TitleScreenScene::draw(sf::RenderWindow& window) {
     
 }
+
+
+void og::TitleScreenScene::unload() {
+    
+}
