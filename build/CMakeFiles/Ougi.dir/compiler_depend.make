@@ -3762,6 +3762,7 @@ CMakeFiles/Ougi.dir/src/scene_test.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/scene_
   /mnt/HD/Programs/vitor/Ougi/include/system.hpp \
   /usr/include/c++/12/unordered_set \
   /usr/include/c++/12/bits/unordered_set.h \
+  /mnt/HD/Programs/vitor/Ougi/include/globals.hpp \
   /mnt/HD/Programs/vitor/Ougi/include/camera.hpp \
   /usr/include/c++/12/random \
   /usr/include/c++/12/cmath \
@@ -4836,7 +4837,32 @@ CMakeFiles/Ougi.dir/src/system_sprite.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/sys
   /usr/include/c++/12/bits/unique_lock.h \
   /mnt/HD/Programs/vitor/Ougi/include/component_array.hpp \
   /mnt/HD/Programs/vitor/Ougi/include/component_id_manager.hpp \
-  /mnt/HD/Programs/vitor/Ougi/include/system_manager.hpp
+  /mnt/HD/Programs/vitor/Ougi/include/system_manager.hpp \
+  /mnt/HD/Programs/vitor/Ougi/include/globals.hpp \
+  /usr/include/c++/12/cmath \
+  /usr/include/math.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/c++/12/bits/specfun.h \
+  /usr/include/c++/12/tr1/gamma.tcc \
+  /usr/include/c++/12/tr1/special_function_util.h \
+  /usr/include/c++/12/tr1/bessel_function.tcc \
+  /usr/include/c++/12/tr1/beta_function.tcc \
+  /usr/include/c++/12/tr1/ell_integral.tcc \
+  /usr/include/c++/12/tr1/exp_integral.tcc \
+  /usr/include/c++/12/tr1/hypergeometric.tcc \
+  /usr/include/c++/12/tr1/legendre_function.tcc \
+  /usr/include/c++/12/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/12/tr1/poly_hermite.tcc \
+  /usr/include/c++/12/tr1/poly_laguerre.tcc \
+  /usr/include/c++/12/tr1/riemann_zeta.tcc
 
 CMakeFiles/Ougi.dir/src/texture_pool.cpp.o: /mnt/HD/Programs/vitor/Ougi/src/texture_pool.cpp \
   /usr/include/stdc-predef.h \

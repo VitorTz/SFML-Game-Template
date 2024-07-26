@@ -1,5 +1,6 @@
 #include "../include/system.hpp"
 #include "../include/ecs.hpp"
+#include "../include/globals.hpp"
 #include <cmath>
 
 
@@ -14,6 +15,6 @@ void og::SpriteSystem::draw(
 ) {
     const og::transform_t& transform = og::gEcs.getTransform(e);
     og::sprite_t& sprite = og::gEcs.getComponent<og::sprite_t>(e);
-    sprite.sprite.setPosition(std::round(transform.pos.x), std::round(transform.pos.y));
+    sprite.sprite.setPosition(transform.pos.x, transform.pos.y);    
     window.draw(sprite.sprite);
 }

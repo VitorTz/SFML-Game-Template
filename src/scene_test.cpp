@@ -1,6 +1,7 @@
 #include "../include/scene.hpp"
 #include "../include/ecs.hpp"
 #include "../include/constants.hpp"
+#include "../include/globals.hpp"
 #include "../include/camera.hpp"
 #include "../include/util.hpp"
 #include <random>
@@ -94,15 +95,14 @@ void og::TestScene2::update(const float dt) {
         og::normalizeVec(&direction);        
         playerTransform.pos.x += dt * 150.f * direction.x;
         playerTransform.pos.y += dt * 150.f * direction.y;
-
+        
     // enemy
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space)) {
             og::transform_t& enemyTransform = og::gEcs.getTransform(this->enemyEntity);
             enemyTransform.pos = { randXpos(generator), randYpos(generator) };
         }
 
-
-    og::gEcs.update(dt);
+    og::gEcs.update(dt);    
 }
 
 
