@@ -24,8 +24,6 @@ set(OLD_GLOB
   "/mnt/HD/Programs/vitor/Ougi/include/system.hpp"
   "/mnt/HD/Programs/vitor/Ougi/include/system_manager.hpp"
   "/mnt/HD/Programs/vitor/Ougi/include/texture_pool.hpp"
-  "/mnt/HD/Programs/vitor/Ougi/include/thread-pool-4.1.0/include/BS_thread_pool.hpp"
-  "/mnt/HD/Programs/vitor/Ougi/include/thread-pool-4.1.0/include/BS_thread_pool_utils.hpp"
   "/mnt/HD/Programs/vitor/Ougi/include/types.hpp"
   "/mnt/HD/Programs/vitor/Ougi/include/util.hpp"
   )

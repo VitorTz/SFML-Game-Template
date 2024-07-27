@@ -17,7 +17,7 @@ namespace og {
     constexpr char WINDOW_TITLE[] = "Ougi";
     constexpr int FPS = 60;
     
-    constexpr og::SceneId FIRST_SCENE = og::SceneId::TestScene2Id;
+    constexpr og::SceneId FIRST_SCENE = og::SceneId::TitleScreenSceneId;
     constexpr bool DEBUD_MODE = true;
 
     constexpr og::zindex_t MIN_Z_INDEX = 0;
