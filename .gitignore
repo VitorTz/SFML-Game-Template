@@ -3,6 +3,7 @@
 
 build/
 .vscode/
+*.log
 
 # Compiled Object files
 *.slo
