@@ -1,3 +1,0 @@
-/mnt/HD/Programs/vitor/Ougi/build/_deps/sfml-subbuild/CMakeFiles/sfml-populate.dir
-/mnt/HD/Programs/vitor/Ougi/build/_deps/sfml-subbuild/CMakeFiles/edit_cache.dir
-/mnt/HD/Programs/vitor/Ougi/build/_deps/sfml-subbuild/CMakeFiles/rebuild_cache.dir
