@@ -2,6 +2,7 @@
 *.d
 
 build/
+log/
 .vscode/
 *.log
 

@@ -25,11 +25,11 @@ cmake --build build --config Release
 ## Run
 
 ``` bash
-./build/bin/PokemonRpg
+./build/bin/Ougi
 ```
 
 ## Solution for safe directory error
 
 ``` bash
-git config --global --add safe.directory /complete/path/to/PokemonRpg/build/_deps/sfml-src
+git config --global --add safe.directory /complete/path/to/Ougi/build/_deps/sfml-src
 ```
