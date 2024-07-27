@@ -1,4 +1,4 @@
-# Ougi
+# Ougi (C++ SFML Game Template)
 
 ## Linux SFML's dependencies
 
