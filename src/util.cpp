@@ -21,7 +21,7 @@ unsigned long og::hash(const char* s) {
 int og::randint(const int start, const int end) {
     std::random_device dev;
     std::mt19937 rng(dev());
-    std::uniform_int_distribution<std::mt19937::result_type> d(1, 6);
+    std::uniform_int_distribution<std::mt19937::result_type> d(start, end);
     return d(rng);
 }
 

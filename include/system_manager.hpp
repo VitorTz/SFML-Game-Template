@@ -38,7 +38,7 @@ namespace og {
                 }
                 for (auto& pair : this->entityToSystem) {
                     pair.second.reserve(og::MAX_ENTITIES);
-                }                
+                }
             }
 
             template<typename T>
